@@ -1,4 +1,4 @@
-# Awesome-Federated-Learning
+# Awesome-Federated-Learning [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 A curated list of resources on federated learning, especially focusing on the theoretical perspectives. 
 
 **Note:**          
