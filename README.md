@@ -10,6 +10,11 @@ A curated list of resources on federated learning, especially focusing on the **
 
 ## Contents
 - [Local Training (LT) Methods](#lt_methods)
+  -  [First Generation (Heuristic)](#lt_heuristic)
+  -  [Second Generation (Homogeneous)](#lt_homogeneous)
+  -  [Third Generation (Sublinear)](#lt_sublinear)
+  -  [Fourth Generation (Linear)](#lt_linear)
+  -  [Fifth Generation (Accelerated)](#lt_accelerated)
 
 ## Local Training (LT) Methods
 The main idea behind Local Training (LT) is to optimize the local model multiple times and then aggregate the final local output to the server. LT is an efficient technique that helps reduce the communication complexity in distributed machine learning. Over time, researchers have developed various generations of local training methods, starting from simple empirical approaches and evolving to sophisticated techniques that offer better communication complexity than gradient descent (GD) under standard assumptions. For instance, ProxSkip-VR provides insights into the five generations of local training methods. 
