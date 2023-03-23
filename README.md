@@ -9,7 +9,7 @@ A curated list of resources on federated learning, especially focusing on the th
 - The list will be continuously updated to include the latest developments in federated learning research.
 
 ## Local Training (LT) Methods
-The main idea behind Local Training (LT) is to optimize the local model multiple times and then aggregate the final local output to the server. LT is an efficient technique that helps reduce the communication complexity in distributed machine learning. Over time, researchers have developed various generations of local training methods, starting from simple empirical approaches and evolving to sophisticated techniques that offer better communication complexity than gradient descent under standard assumptions. For instance, VR-ProxSkip provides insights into the five generations of local training methods. 
+The main idea behind Local Training (LT) is to optimize the local model multiple times and then aggregate the final local output to the server. LT is an efficient technique that helps reduce the communication complexity in distributed machine learning. Over time, researchers have developed various generations of local training methods, starting from simple empirical approaches and evolving to sophisticated techniques that offer better communication complexity than gradient descent (GD) under standard assumptions. For instance, ProxSkip-VR provides insights into the five generations of local training methods. 
 
 ### First Generation (Heuristic)
 This generation only contains the empirical results. 
@@ -19,6 +19,25 @@ This generation only contains the empirical results.
 - **FedAvg:**
 
 ### Second Generation (Homogeneous)
+The algorithms in this generation have theories but they are built on top of very strict assumptions that violate the motivation of federated learning. We will ellaborate with specific papers. 
+
 - **FedAvg:**
 - **LFGD:**
 
+### Third Generation (Sublinear)
+This generation has standard assumptions including strongly convexity and smoothness, but the communication complexity rate is sublinear. 
+
+- **LGD:**
+- **LSGD:**
+
+### Fourth Generation (Linear)
+This generation has linear communication complexity under standard assumptions but the rate is worse than GD.
+
+- **Scaffold:**
+- **S-Local-GD:**
+- **FedLin:**
+
+### Fifth Generation (Accelerated)
+This generation, the most recent one, sucessfully achieved accelerated communication complexity rate which is better than GD. 
+- **Scaffnew:**
+- **ProxSkip-VR:**
