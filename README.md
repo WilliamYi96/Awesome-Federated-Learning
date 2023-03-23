@@ -9,7 +9,7 @@ A curated list of resources on federated learning, especially focusing on the **
 - The list will be continuously updated to include the latest developments in federated learning research.
 
 ## Contents
-- [Local Training (LT) Methods](#lt-methods)
+- [Local Training Methods](#lt-methods)
   -  [First Generation (Heuristic)](#lt-heuristic)
   -  [Second Generation (Homogeneous)](#lt-homogeneous)
   -  [Third Generation (Sublinear)](#lt-sublinear)
