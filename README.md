@@ -15,43 +15,44 @@ A curated list of resources on federated learning, especially focusing on the **
   -  [Third Generation (Sublinear)](#lt-sublinear)
   -  [Fourth Generation (Linear)](#lt-linear)
   -  [Fifth Generation (Accelerated)](#lt-accelerated)
--  [TODO](#todo)
+-  [Personalized Federated Learning](#todo)
 
 ## Local Training (LT) Methods
 The main idea behind Local Training (LT) is to optimize the local model multiple times and then aggregate the final local output to the server. LT is an efficient technique that helps reduce the communication complexity in distributed machine learning. Over time, researchers have developed various generations of local training methods, starting from simple empirical approaches and evolving to sophisticated techniques that offer better communication complexity than gradient descent (GD) under standard assumptions. For instance, ProxSkip-VR provides insights into the five generations of local training methods. 
 
 ### First Generation (Heuristic)
-This generation only contains the empirical results. 
+This generation only contains empirical results. 
 
 - **LocalSGD:** Daniel Povey, Xiaohui Zhang, and Sanjeev Khudanpur. Parallel training of DNNs with natural gradient and parameter averaging. ICLR Workshop, 2015. 
 - **SparkNet:** Philipp Moritz, Robert Nishihara, Ion Stoica, and Michael I. Jordan. SparkNet: Training deep networks in Spark. ICLR, 2016.
 - **FedAvg:** H Brendan McMahan, Eider Moore, Daniel Ramage, Seth Hampson, and Blaise Agüera y Arcas. Communication-efficient learning of deep networks from decentralized data. AISTATS, 2017.
 
 ### Second Generation (Homogeneous)
-The algorithms in this generation have theories but they are built on top of very strict assumptions that violate the motivation of federated learning. We will ellaborate with specific papers. 
+The algorithms in this generation have theories but they are built on top of very strict assumptions that violate the motivation of federated learning. We will elaborate with specific papers. 
 
-- **FedAvg:** Xiang Li, Kaixuan Huang, Wenhao Yang, Shusen Wang, and Zhihua Zhang. On the conver-gence of FedAvg on non-IID data. ICLR, 2020.
-- **LFGD:** Farzin Haddadpour and Mehrdad Mahdavi. On the convergence of local descent methods infederated learning. arXiv, 2019.
+- **FedAvg:** Xiang Li, Kaixuan Huang, Wenhao Yang, Shusen Wang, and Zhihua Zhang. On the convergence of FedAvg on non-IID data. ICLR, 2020.
+- **LFGD:** Farzin Haddadpour and Mehrdad Mahdavi. On the convergence of local descent methods in federated learning. arXiv, 2019.
 
 ### Third Generation (Sublinear)
-This generation has standard assumptions including strongly convexity and smoothness, but the communication complexity rate is sublinear. 
+This generation has standard assumptions, including strong convexity and smoothness, but the communication complexity rate is sublinear. 
 
-- **LGD:** Ahmed Khaled, Konstantin Mishchenko, and Peter Richtárik. First analysis of local GD on heterogeneous data. In NeurIPS Workshop on Federated Learning for Data Privacy and Confidentiality, 2019.
+- **LGD:** Ahmed Khaled, Konstantin Mishchenko, and Peter Richtárik. The first analysis of local GD on heterogeneous data. In NeurIPS Workshop on Federated Learning for Data Privacy and Confidentiality, 2019.
 - **LSGD:** Ahmed Khaled, Konstantin Mishchenko, and Peter Richtárik. Tighter theory for local SGD on identical and heterogeneous data. AISTATS, 2020.
 
 ### Fourth Generation (Linear)
-This generation has linear communication complexity under standard assumptions but the rate is worse than GD.
+This generation has linear communication complexity under standard assumptions, but the rate is worse than GD.
 
 - **Scaffold:** Sai Karimireddy, Satyen Kale, Mehryar Mohri, Sashank Reddi, Sebastian Stich, and Ananda Suresh. SCAFFOLD: Stochastic controlled averaging for on-device federated learning. ICML, 2020.
 - **S-Local-GD:** Eduard Gorbunov, Filip Hanzely, and Peter Richtárik. Local SGD: unified theory and new efficient methods. NeurIPS, 2020.
 - **FedLin:** Aritra Mitra, Rayana Jaafar, George Pappas, and Hamed Hassani. Linear convergence in federated learning: Tackling client heterogeneity and sparse gradients. NeurIPS, 2021.
 
 ### Fifth Generation (Accelerated)
-This generation, the most recent one, sucessfully achieved accelerated communication complexity rate which is better than GD. 
+This generation, the most recent one, successfully achieved an accelerated communication complexity rate, which is better than GD. 
 - **Scaffnew:** Konstantin Mishchenko, Grigory Malinovsky, Sebastian Stich, and Peter Richtárik. ProxSkip: Yes! Local gradient steps provably lead to communication acceleration! Finally. ICML, 2022.
-- **ProxSkip-VR:** Grigory Malinovsky, Kai Yi, and Peter Richtárik. Variance reduced proxskip: Algorithm, theory and application to federated learning. NeurIPS, 2022.
-- **5GCS:** Michał Grudzien, Grigory Malinovsky, and Peter Richtárik. Can 5th generation local training methods support client sampling? yes!. AISTATS, 2023. 
+- **ProxSkip-VR:** Grigory Malinovsky, Kai Yi, and Peter Richtárik. Variance reduced proxskip: Algorithm, theory, and application to federated learning. NeurIPS, 2022.
+- **5GCS:** Michał Grudzien, Grigory Malinovsky, and Peter Richtárik. Can 5th-generation local training methods support client sampling? yes!. AISTATS, 2023. 
 - **CompressedScaffnew:** Laurent Condat, Ivan Agarsky, and Peter Richtárik. Provably doubly accelerated federated learning: The first theoretically successful combination of local training and compressed communication. arXiv, 2022.
 - **GradSkip:** Artavazd Maranjyan, Mher Safaryan, and Peter Richtárik. Gradskip: Communication-accelerated local gradient methods with better computational complexity. arXiv, 2022. 
 
-## TODO
+## Personalized Federated Learning
+- **pFedGate:** Daoyuan Chen, Liuyi Yao, Dawei Gao, Bolin Ding, Yaliang Li. Efficient Personalized Federated Learning via Sparse Model-Adaptation. (bounded diversity) [[paper]]() [[code (no guide on pFedGate)]](https://github.com/alibaba/FederatedScope/)
