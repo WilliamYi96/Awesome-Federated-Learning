@@ -55,4 +55,7 @@ This generation, the most recent one, successfully achieved an accelerated commu
 - **GradSkip:** Artavazd Maranjyan, Mher Safaryan, and Peter Richtárik. Gradskip: Communication-accelerated local gradient methods with better computational complexity. arXiv, 2022. 
 
 ## Personalized Federated Learning
-- **pFedGate:** Daoyuan Chen, Liuyi Yao, Dawei Gao, Bolin Ding, Yaliang Li. Efficient Personalized Federated Learning via Sparse Model-Adaptation. (bounded diversity) [[paper]]() [[code (no guide on pFedGate)]](https://github.com/alibaba/FederatedScope/)
+- **pFedGate:** Daoyuan Chen, Liuyi Yao, Dawei Gao, Bolin Ding, Yaliang Li. Efficient Personalized Federated Learning via Sparse Model-Adaptation. *ICML23*. (bounded diversity) [[paper]](https://arxiv.org/abs/2305.02776) [[code (no implementation of pFedGate)]](https://github.com/alibaba/FederatedScope/)
+- **FedCR:** Hao Zhang, Chenglin Li, Wenrui Dai, Junni Zou, Hongkai Xiong. FedCR: Personalized Federated Learning Based on Across-Client Common Representation with Conditional Mutual Information Regularization. *ICML23*. [[paper(not standard convergence theory)]](https://openreview.net/pdf?id=YDC5jTS3LR) [[code]](https://github.com/haozzh/FedCR)
+- **pFedGraph:** Rui Ye, Zhenyang Ni, Fangzhao Wu, Siheng Chen, Yanfeng Wang. Personalized Federated Learning with Inferred Collaboration Graphs. *ICML23*. (no theory) [[paper]](https://openreview.net/forum?id=33fj5Ph3ot) [[code (under preparation)]](https://github.com/MediaBrain-SJTU/pFedGraph)
+- **FED-PUB:** Jinheon Baek, Wonyong Jeong, Jiongdao Jin, Jaehong Yoon, Sung Ju Hwang. Personalized Subgraph Federated Learning. *ICML23*. [[paper]](https://arxiv.org/pdf/2206.10206.pdf) [[code (not standard datasets)]](https://github.com/JinheonBaek/FED-PUB)
